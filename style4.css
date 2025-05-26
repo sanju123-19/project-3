@@ -1,0 +1,64 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color:gold;
+  background: url('dance.jpg') no-repeat center center/cover;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  background-image: url(dance1.jpg);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  backdrop-filter: blur(5px);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color:aqua;
+}
+
+p, time {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.rsvp-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4081;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background-color: #e91e63;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
